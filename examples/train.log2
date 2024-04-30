@@ -1,0 +1,329 @@
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+--------------------------------------------------------------------
+True
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/transformer_engine/pytorch/transformer.py:967: DeprecationWarning: Arguments `attention_softmax_in_fp32` and `apply_query_key_layer_scaling`are deprecated and will be fully removed in future releases.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/distributed/distributed_c10d.py:2603: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+(min, max) time across ranks (ms):
+    load-checkpoint ................................: (0.38, 1.67)
+(min, max) time across ranks (ms):
+    model-and-optimizer-setup ......................: (4863.48, 4903.75)
+    train/valid/test-data-iterators-setup ..........: (195.67, 235.69)
+ [2024-04-29 15:30:59] iteration      100/  500000 | consumed samples:        32000 | elapsed time per iteration (ms): 421.4 | learning rate: 3.984375E-06 | global batch size:   320 | lm loss: 9.594620E+00 | loss scale: 262144.0 | grad norm: 1.846 | number of skipped iterations:  15 | number of nan iterations:   0 |
+ [2024-04-29 15:31:19] iteration      200/  500000 | consumed samples:        64000 | elapsed time per iteration (ms): 201.4 | learning rate: 8.671875E-06 | global batch size:   320 | lm loss: 8.379852E+00 | loss scale: 262144.0 | grad norm: 1.371 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:31:40] iteration      300/  500000 | consumed samples:        96000 | elapsed time per iteration (ms): 202.1 | learning rate: 1.335937E-05 | global batch size:   320 | lm loss: 7.544723E+00 | loss scale: 262144.0 | grad norm: 0.960 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:32:00] iteration      400/  500000 | consumed samples:       128000 | elapsed time per iteration (ms): 204.1 | learning rate: 1.804687E-05 | global batch size:   320 | lm loss: 7.000662E+00 | loss scale: 262144.0 | grad norm: 1.708 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:32:20] iteration      500/  500000 | consumed samples:       160000 | elapsed time per iteration (ms): 202.1 | learning rate: 2.273437E-05 | global batch size:   320 | lm loss: 6.661359E+00 | loss scale: 262144.0 | grad norm: 1.248 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:32:41] iteration      600/  500000 | consumed samples:       192000 | elapsed time per iteration (ms): 208.6 | learning rate: 2.742187E-05 | global batch size:   320 | lm loss: 6.428868E+00 | loss scale: 262144.0 | grad norm: 1.584 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:33:02] iteration      700/  500000 | consumed samples:       224000 | elapsed time per iteration (ms): 207.4 | learning rate: 3.210937E-05 | global batch size:   320 | lm loss: 6.240583E+00 | loss scale: 262144.0 | grad norm: 1.765 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:33:23] iteration      800/  500000 | consumed samples:       256000 | elapsed time per iteration (ms): 212.8 | learning rate: 3.679687E-05 | global batch size:   320 | lm loss: 6.057659E+00 | loss scale: 262144.0 | grad norm: 2.880 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:33:44] iteration      900/  500000 | consumed samples:       288000 | elapsed time per iteration (ms): 204.9 | learning rate: 4.148437E-05 | global batch size:   320 | lm loss: 5.874911E+00 | loss scale: 262144.0 | grad norm: 2.028 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:34:04] iteration     1000/  500000 | consumed samples:       320000 | elapsed time per iteration (ms): 200.1 | learning rate: 4.617187E-05 | global batch size:   320 | lm loss: 5.707230E+00 | loss scale: 262144.0 | grad norm: 1.908 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (1023.08, 1023.95)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 1000 | lm loss value: 5.482478E+00 | lm loss PPL: 2.404417E+02 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:34:25] iteration     1100/  500000 | consumed samples:       352000 | elapsed time per iteration (ms): 200.8 | learning rate: 5.085938E-05 | global batch size:   320 | lm loss: 5.541526E+00 | loss scale: 524288.0 | grad norm: 2.694 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:34:45] iteration     1200/  500000 | consumed samples:       384000 | elapsed time per iteration (ms): 206.3 | learning rate: 5.554687E-05 | global batch size:   320 | lm loss: 5.370455E+00 | loss scale: 524288.0 | grad norm: 2.043 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:35:06] iteration     1300/  500000 | consumed samples:       416000 | elapsed time per iteration (ms): 201.9 | learning rate: 6.023437E-05 | global batch size:   320 | lm loss: 5.214594E+00 | loss scale: 524288.0 | grad norm: 1.988 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:35:26] iteration     1400/  500000 | consumed samples:       448000 | elapsed time per iteration (ms): 201.5 | learning rate: 6.492187E-05 | global batch size:   320 | lm loss: 5.057621E+00 | loss scale: 524288.0 | grad norm: 1.929 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:35:46] iteration     1500/  500000 | consumed samples:       480000 | elapsed time per iteration (ms): 203.0 | learning rate: 6.960937E-05 | global batch size:   320 | lm loss: 4.887292E+00 | loss scale: 524288.0 | grad norm: 1.741 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:36:07] iteration     1600/  500000 | consumed samples:       512000 | elapsed time per iteration (ms): 206.3 | learning rate: 7.429687E-05 | global batch size:   320 | lm loss: 4.723569E+00 | loss scale: 524288.0 | grad norm: 1.433 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:36:27] iteration     1700/  500000 | consumed samples:       544000 | elapsed time per iteration (ms): 205.0 | learning rate: 7.898437E-05 | global batch size:   320 | lm loss: 4.553916E+00 | loss scale: 524288.0 | grad norm: 1.458 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:36:48] iteration     1800/  500000 | consumed samples:       576000 | elapsed time per iteration (ms): 206.3 | learning rate: 8.367187E-05 | global batch size:   320 | lm loss: 4.407303E+00 | loss scale: 524288.0 | grad norm: 1.364 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:37:08] iteration     1900/  500000 | consumed samples:       608000 | elapsed time per iteration (ms): 204.5 | learning rate: 8.835937E-05 | global batch size:   320 | lm loss: 4.280536E+00 | loss scale: 524288.0 | grad norm: 1.501 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:37:29] iteration     2000/  500000 | consumed samples:       640000 | elapsed time per iteration (ms): 204.2 | learning rate: 9.304687E-05 | global batch size:   320 | lm loss: 4.184004E+00 | loss scale: 524288.0 | grad norm: 1.151 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (766.22, 766.43)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 2000 | lm loss value: 3.941681E+00 | lm loss PPL: 5.150510E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:37:50] iteration     2100/  500000 | consumed samples:       672000 | elapsed time per iteration (ms): 206.0 | learning rate: 9.764062E-05 | global batch size:   320 | lm loss: 4.092645E+00 | loss scale: 524288.0 | grad norm: 1.093 | number of skipped iterations:   2 | number of nan iterations:   0 |
+ [2024-04-29 15:38:10] iteration     2200/  500000 | consumed samples:       704000 | elapsed time per iteration (ms): 203.9 | learning rate: 1.023281E-04 | global batch size:   320 | lm loss: 4.009444E+00 | loss scale: 524288.0 | grad norm: 1.085 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:38:31] iteration     2300/  500000 | consumed samples:       736000 | elapsed time per iteration (ms): 203.6 | learning rate: 1.070156E-04 | global batch size:   320 | lm loss: 3.934696E+00 | loss scale: 524288.0 | grad norm: 0.838 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:38:51] iteration     2400/  500000 | consumed samples:       768000 | elapsed time per iteration (ms): 201.8 | learning rate: 1.117031E-04 | global batch size:   320 | lm loss: 3.871331E+00 | loss scale: 524288.0 | grad norm: 0.844 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:39:12] iteration     2500/  500000 | consumed samples:       800000 | elapsed time per iteration (ms): 207.2 | learning rate: 1.163906E-04 | global batch size:   320 | lm loss: 3.813450E+00 | loss scale: 524288.0 | grad norm: 0.900 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:39:32] iteration     2600/  500000 | consumed samples:       832000 | elapsed time per iteration (ms): 203.2 | learning rate: 1.210781E-04 | global batch size:   320 | lm loss: 3.765742E+00 | loss scale: 524288.0 | grad norm: 0.766 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:39:52] iteration     2700/  500000 | consumed samples:       864000 | elapsed time per iteration (ms): 203.0 | learning rate: 1.257656E-04 | global batch size:   320 | lm loss: 3.719827E+00 | loss scale: 524288.0 | grad norm: 0.720 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:40:12] iteration     2800/  500000 | consumed samples:       896000 | elapsed time per iteration (ms): 199.7 | learning rate: 1.304531E-04 | global batch size:   320 | lm loss: 3.680622E+00 | loss scale: 524288.0 | grad norm: 0.795 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:40:33] iteration     2900/  500000 | consumed samples:       928000 | elapsed time per iteration (ms): 208.4 | learning rate: 1.351406E-04 | global batch size:   320 | lm loss: 3.639655E+00 | loss scale: 524288.0 | grad norm: 0.664 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:40:53] iteration     3000/  500000 | consumed samples:       960000 | elapsed time per iteration (ms): 198.3 | learning rate: 1.398281E-04 | global batch size:   320 | lm loss: 3.607988E+00 | loss scale: 524288.0 | grad norm: 0.714 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (782.33, 782.77)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 3000 | lm loss value: 3.440089E+00 | lm loss PPL: 3.118973E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:41:14] iteration     3100/  500000 | consumed samples:       992000 | elapsed time per iteration (ms): 202.2 | learning rate: 1.445156E-04 | global batch size:   320 | lm loss: 3.579200E+00 | loss scale: 1048576.0 | grad norm: 0.572 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:41:34] iteration     3200/  500000 | consumed samples:      1024000 | elapsed time per iteration (ms): 203.0 | learning rate: 1.492031E-04 | global batch size:   320 | lm loss: 3.551930E+00 | loss scale: 1048576.0 | grad norm: 0.631 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:41:55] iteration     3300/  500000 | consumed samples:      1056000 | elapsed time per iteration (ms): 205.9 | learning rate: 1.500000E-04 | global batch size:   320 | lm loss: 3.522538E+00 | loss scale: 1048576.0 | grad norm: 0.595 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:42:15] iteration     3400/  500000 | consumed samples:      1088000 | elapsed time per iteration (ms): 200.6 | learning rate: 1.499999E-04 | global batch size:   320 | lm loss: 3.496646E+00 | loss scale: 1048576.0 | grad norm: 0.545 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:42:35] iteration     3500/  500000 | consumed samples:      1120000 | elapsed time per iteration (ms): 200.2 | learning rate: 1.499997E-04 | global batch size:   320 | lm loss: 3.471108E+00 | loss scale: 1048576.0 | grad norm: 0.547 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:42:55] iteration     3600/  500000 | consumed samples:      1152000 | elapsed time per iteration (ms): 200.9 | learning rate: 1.499995E-04 | global batch size:   320 | lm loss: 3.453628E+00 | loss scale: 1048576.0 | grad norm: 0.508 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:43:15] iteration     3700/  500000 | consumed samples:      1184000 | elapsed time per iteration (ms): 203.5 | learning rate: 1.499992E-04 | global batch size:   320 | lm loss: 3.427156E+00 | loss scale: 1048576.0 | grad norm: 0.540 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:43:36] iteration     3800/  500000 | consumed samples:      1216000 | elapsed time per iteration (ms): 203.4 | learning rate: 1.499988E-04 | global batch size:   320 | lm loss: 3.407529E+00 | loss scale: 1048576.0 | grad norm: 0.606 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:43:56] iteration     3900/  500000 | consumed samples:      1248000 | elapsed time per iteration (ms): 205.0 | learning rate: 1.499984E-04 | global batch size:   320 | lm loss: 3.393636E+00 | loss scale: 1048576.0 | grad norm: 0.500 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:44:17] iteration     4000/  500000 | consumed samples:      1280000 | elapsed time per iteration (ms): 204.4 | learning rate: 1.499979E-04 | global batch size:   320 | lm loss: 3.373566E+00 | loss scale: 1048576.0 | grad norm: 0.464 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (760.89, 761.16)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 4000 | lm loss value: 3.215323E+00 | lm loss PPL: 2.491134E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:44:38] iteration     4100/  500000 | consumed samples:      1312000 | elapsed time per iteration (ms): 206.5 | learning rate: 1.499973E-04 | global batch size:   320 | lm loss: 3.355229E+00 | loss scale: 2097152.0 | grad norm: 0.452 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:44:59] iteration     4200/  500000 | consumed samples:      1344000 | elapsed time per iteration (ms): 212.9 | learning rate: 1.499967E-04 | global batch size:   320 | lm loss: 3.338852E+00 | loss scale: 2097152.0 | grad norm: 0.485 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:45:20] iteration     4300/  500000 | consumed samples:      1376000 | elapsed time per iteration (ms): 204.0 | learning rate: 1.499960E-04 | global batch size:   320 | lm loss: 3.327186E+00 | loss scale: 2097152.0 | grad norm: 0.485 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:45:40] iteration     4400/  500000 | consumed samples:      1408000 | elapsed time per iteration (ms): 203.8 | learning rate: 1.499952E-04 | global batch size:   320 | lm loss: 3.312855E+00 | loss scale: 2097152.0 | grad norm: 0.443 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 15:46:00] iteration     4500/  500000 | consumed samples:      1440000 | elapsed time per iteration (ms): 203.2 | learning rate: 1.499943E-04 | global batch size:   320 | lm loss: 3.301491E+00 | loss scale: 2097152.0 | grad norm: 0.469 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:46:21] iteration     4600/  500000 | consumed samples:      1472000 | elapsed time per iteration (ms): 209.6 | learning rate: 1.499934E-04 | global batch size:   320 | lm loss: 3.287632E+00 | loss scale: 2097152.0 | grad norm: 0.427 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:46:41] iteration     4700/  500000 | consumed samples:      1504000 | elapsed time per iteration (ms): 199.7 | learning rate: 1.499924E-04 | global batch size:   320 | lm loss: 3.275691E+00 | loss scale: 2097152.0 | grad norm: 0.451 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:47:02] iteration     4800/  500000 | consumed samples:      1536000 | elapsed time per iteration (ms): 203.0 | learning rate: 1.499914E-04 | global batch size:   320 | lm loss: 3.266386E+00 | loss scale: 2097152.0 | grad norm: 0.413 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:47:22] iteration     4900/  500000 | consumed samples:      1568000 | elapsed time per iteration (ms): 203.0 | learning rate: 1.499903E-04 | global batch size:   320 | lm loss: 3.256591E+00 | loss scale: 1048576.0 | grad norm: 0.428 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 15:47:43] iteration     5000/  500000 | consumed samples:      1600000 | elapsed time per iteration (ms): 208.1 | learning rate: 1.499891E-04 | global batch size:   320 | lm loss: 3.252259E+00 | loss scale: 1048576.0 | grad norm: 0.427 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (737.24, 737.48)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 5000 | lm loss value: 3.116827E+00 | lm loss PPL: 2.257464E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:48:05] iteration     5100/  500000 | consumed samples:      1632000 | elapsed time per iteration (ms): 212.6 | learning rate: 1.499878E-04 | global batch size:   320 | lm loss: 3.237682E+00 | loss scale: 1048576.0 | grad norm: 0.419 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:48:25] iteration     5200/  500000 | consumed samples:      1664000 | elapsed time per iteration (ms): 205.1 | learning rate: 1.499865E-04 | global batch size:   320 | lm loss: 3.229552E+00 | loss scale: 1048576.0 | grad norm: 0.392 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:48:46] iteration     5300/  500000 | consumed samples:      1696000 | elapsed time per iteration (ms): 205.7 | learning rate: 1.499851E-04 | global batch size:   320 | lm loss: 3.213993E+00 | loss scale: 1048576.0 | grad norm: 0.412 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:49:06] iteration     5400/  500000 | consumed samples:      1728000 | elapsed time per iteration (ms): 200.8 | learning rate: 1.499836E-04 | global batch size:   320 | lm loss: 3.204219E+00 | loss scale: 1048576.0 | grad norm: 0.399 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:49:27] iteration     5500/  500000 | consumed samples:      1760000 | elapsed time per iteration (ms): 211.4 | learning rate: 1.499821E-04 | global batch size:   320 | lm loss: 3.205359E+00 | loss scale: 1048576.0 | grad norm: 0.404 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:49:48] iteration     5600/  500000 | consumed samples:      1792000 | elapsed time per iteration (ms): 205.2 | learning rate: 1.499805E-04 | global batch size:   320 | lm loss: 3.193545E+00 | loss scale: 1048576.0 | grad norm: 0.427 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:50:08] iteration     5700/  500000 | consumed samples:      1824000 | elapsed time per iteration (ms): 201.4 | learning rate: 1.499788E-04 | global batch size:   320 | lm loss: 3.178175E+00 | loss scale: 1048576.0 | grad norm: 0.369 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:50:28] iteration     5800/  500000 | consumed samples:      1856000 | elapsed time per iteration (ms): 202.6 | learning rate: 1.499771E-04 | global batch size:   320 | lm loss: 3.176634E+00 | loss scale: 1048576.0 | grad norm: 0.387 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:50:49] iteration     5900/  500000 | consumed samples:      1888000 | elapsed time per iteration (ms): 209.9 | learning rate: 1.499753E-04 | global batch size:   320 | lm loss: 3.173495E+00 | loss scale: 2097152.0 | grad norm: 0.380 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:51:09] iteration     6000/  500000 | consumed samples:      1920000 | elapsed time per iteration (ms): 204.3 | learning rate: 1.499734E-04 | global batch size:   320 | lm loss: 3.162507E+00 | loss scale: 2097152.0 | grad norm: 0.376 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (741.16, 741.91)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 6000 | lm loss value: 3.043998E+00 | lm loss PPL: 2.098898E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:51:30] iteration     6100/  500000 | consumed samples:      1952000 | elapsed time per iteration (ms): 199.7 | learning rate: 1.499715E-04 | global batch size:   320 | lm loss: 3.154395E+00 | loss scale: 2097152.0 | grad norm: 0.382 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 15:51:50] iteration     6200/  500000 | consumed samples:      1984000 | elapsed time per iteration (ms): 198.2 | learning rate: 1.499694E-04 | global batch size:   320 | lm loss: 3.149681E+00 | loss scale: 2097152.0 | grad norm: 0.356 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:52:11] iteration     6300/  500000 | consumed samples:      2016000 | elapsed time per iteration (ms): 207.3 | learning rate: 1.499674E-04 | global batch size:   320 | lm loss: 3.140046E+00 | loss scale: 2097152.0 | grad norm: 0.347 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:52:31] iteration     6400/  500000 | consumed samples:      2048000 | elapsed time per iteration (ms): 200.7 | learning rate: 1.499652E-04 | global batch size:   320 | lm loss: 3.135583E+00 | loss scale: 2097152.0 | grad norm: 0.373 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:52:51] iteration     6500/  500000 | consumed samples:      2080000 | elapsed time per iteration (ms): 203.3 | learning rate: 1.499630E-04 | global batch size:   320 | lm loss: 3.128705E+00 | loss scale: 2097152.0 | grad norm: 0.347 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:53:11] iteration     6600/  500000 | consumed samples:      2112000 | elapsed time per iteration (ms): 202.4 | learning rate: 1.499607E-04 | global batch size:   320 | lm loss: 3.119298E+00 | loss scale: 2097152.0 | grad norm: 0.361 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:53:32] iteration     6700/  500000 | consumed samples:      2144000 | elapsed time per iteration (ms): 205.9 | learning rate: 1.499583E-04 | global batch size:   320 | lm loss: 3.117278E+00 | loss scale: 2097152.0 | grad norm: 0.340 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:53:53] iteration     6800/  500000 | consumed samples:      2176000 | elapsed time per iteration (ms): 209.3 | learning rate: 1.499559E-04 | global batch size:   320 | lm loss: 3.111508E+00 | loss scale: 2097152.0 | grad norm: 0.335 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:54:13] iteration     6900/  500000 | consumed samples:      2208000 | elapsed time per iteration (ms): 200.4 | learning rate: 1.499534E-04 | global batch size:   320 | lm loss: 3.105274E+00 | loss scale: 2097152.0 | grad norm: 0.344 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:54:33] iteration     7000/  500000 | consumed samples:      2240000 | elapsed time per iteration (ms): 203.7 | learning rate: 1.499508E-04 | global batch size:   320 | lm loss: 3.102581E+00 | loss scale: 2097152.0 | grad norm: 0.358 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (731.41, 731.70)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 7000 | lm loss value: 2.988598E+00 | lm loss PPL: 1.985782E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:54:54] iteration     7100/  500000 | consumed samples:      2272000 | elapsed time per iteration (ms): 201.3 | learning rate: 1.499482E-04 | global batch size:   320 | lm loss: 3.098037E+00 | loss scale: 2097152.0 | grad norm: 0.349 | number of skipped iterations:   2 | number of nan iterations:   0 |
+ [2024-04-29 15:55:15] iteration     7200/  500000 | consumed samples:      2304000 | elapsed time per iteration (ms): 212.9 | learning rate: 1.499455E-04 | global batch size:   320 | lm loss: 3.088253E+00 | loss scale: 2097152.0 | grad norm: 0.330 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:55:36] iteration     7300/  500000 | consumed samples:      2336000 | elapsed time per iteration (ms): 202.1 | learning rate: 1.499428E-04 | global batch size:   320 | lm loss: 3.081485E+00 | loss scale: 2097152.0 | grad norm: 0.347 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:55:56] iteration     7400/  500000 | consumed samples:      2368000 | elapsed time per iteration (ms): 204.0 | learning rate: 1.499399E-04 | global batch size:   320 | lm loss: 3.080429E+00 | loss scale: 2097152.0 | grad norm: 0.321 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:56:16] iteration     7500/  500000 | consumed samples:      2400000 | elapsed time per iteration (ms): 201.8 | learning rate: 1.499370E-04 | global batch size:   320 | lm loss: 3.074949E+00 | loss scale: 2097152.0 | grad norm: 0.340 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:56:37] iteration     7600/  500000 | consumed samples:      2432000 | elapsed time per iteration (ms): 207.9 | learning rate: 1.499340E-04 | global batch size:   320 | lm loss: 3.071679E+00 | loss scale: 2097152.0 | grad norm: 0.333 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:56:57] iteration     7700/  500000 | consumed samples:      2464000 | elapsed time per iteration (ms): 197.1 | learning rate: 1.499310E-04 | global batch size:   320 | lm loss: 3.064767E+00 | loss scale: 2097152.0 | grad norm: 0.322 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:57:17] iteration     7800/  500000 | consumed samples:      2496000 | elapsed time per iteration (ms): 198.4 | learning rate: 1.499279E-04 | global batch size:   320 | lm loss: 3.057328E+00 | loss scale: 2097152.0 | grad norm: 0.314 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:57:36] iteration     7900/  500000 | consumed samples:      2528000 | elapsed time per iteration (ms): 197.9 | learning rate: 1.499247E-04 | global batch size:   320 | lm loss: 3.057775E+00 | loss scale: 1048576.0 | grad norm: 0.309 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 15:57:57] iteration     8000/  500000 | consumed samples:      2560000 | elapsed time per iteration (ms): 205.1 | learning rate: 1.499215E-04 | global batch size:   320 | lm loss: 3.052249E+00 | loss scale: 1048576.0 | grad norm: 0.322 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (730.57, 731.02)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 8000 | lm loss value: 2.921375E+00 | lm loss PPL: 1.856680E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 15:58:18] iteration     8100/  500000 | consumed samples:      2592000 | elapsed time per iteration (ms): 199.4 | learning rate: 1.499182E-04 | global batch size:   320 | lm loss: 3.048959E+00 | loss scale: 1048576.0 | grad norm: 0.309 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:58:37] iteration     8200/  500000 | consumed samples:      2624000 | elapsed time per iteration (ms): 199.0 | learning rate: 1.499148E-04 | global batch size:   320 | lm loss: 3.041465E+00 | loss scale: 1048576.0 | grad norm: 0.325 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:58:57] iteration     8300/  500000 | consumed samples:      2656000 | elapsed time per iteration (ms): 198.4 | learning rate: 1.499113E-04 | global batch size:   320 | lm loss: 3.042560E+00 | loss scale: 1048576.0 | grad norm: 0.313 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:59:17] iteration     8400/  500000 | consumed samples:      2688000 | elapsed time per iteration (ms): 202.2 | learning rate: 1.499078E-04 | global batch size:   320 | lm loss: 3.033702E+00 | loss scale: 1048576.0 | grad norm: 0.295 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:59:38] iteration     8500/  500000 | consumed samples:      2720000 | elapsed time per iteration (ms): 209.8 | learning rate: 1.499042E-04 | global batch size:   320 | lm loss: 3.028298E+00 | loss scale: 1048576.0 | grad norm: 0.313 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 15:59:58] iteration     8600/  500000 | consumed samples:      2752000 | elapsed time per iteration (ms): 198.3 | learning rate: 1.499005E-04 | global batch size:   320 | lm loss: 3.026382E+00 | loss scale: 1048576.0 | grad norm: 0.300 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:00:18] iteration     8700/  500000 | consumed samples:      2784000 | elapsed time per iteration (ms): 196.6 | learning rate: 1.498968E-04 | global batch size:   320 | lm loss: 3.023309E+00 | loss scale: 1048576.0 | grad norm: 0.316 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:00:38] iteration     8800/  500000 | consumed samples:      2816000 | elapsed time per iteration (ms): 197.5 | learning rate: 1.498930E-04 | global batch size:   320 | lm loss: 3.021268E+00 | loss scale: 1048576.0 | grad norm: 0.328 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:00:58] iteration     8900/  500000 | consumed samples:      2848000 | elapsed time per iteration (ms): 206.9 | learning rate: 1.498891E-04 | global batch size:   320 | lm loss: 3.013438E+00 | loss scale: 2097152.0 | grad norm: 0.310 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:01:18] iteration     9000/  500000 | consumed samples:      2880000 | elapsed time per iteration (ms): 196.3 | learning rate: 1.498852E-04 | global batch size:   320 | lm loss: 3.012270E+00 | loss scale: 2097152.0 | grad norm: 0.298 | number of skipped iterations:   1 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (790.55, 791.05)
+------------------------------------------------------------------------------------------------
+ validation loss at iteration 9000 | lm loss value: 2.898397E+00 | lm loss PPL: 1.814503E+01 | 
+------------------------------------------------------------------------------------------------
+ [2024-04-29 16:01:39] iteration     9100/  500000 | consumed samples:      2912000 | elapsed time per iteration (ms): 197.9 | learning rate: 1.498812E-04 | global batch size:   320 | lm loss: 3.008395E+00 | loss scale: 2097152.0 | grad norm: 0.300 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:01:59] iteration     9200/  500000 | consumed samples:      2944000 | elapsed time per iteration (ms): 200.9 | learning rate: 1.498772E-04 | global batch size:   320 | lm loss: 3.004819E+00 | loss scale: 1048576.0 | grad norm: 0.293 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 16:02:19] iteration     9300/  500000 | consumed samples:      2976000 | elapsed time per iteration (ms): 205.3 | learning rate: 1.498730E-04 | global batch size:   320 | lm loss: 2.997150E+00 | loss scale: 1048576.0 | grad norm: 0.293 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:02:39] iteration     9400/  500000 | consumed samples:      3008000 | elapsed time per iteration (ms): 197.4 | learning rate: 1.498688E-04 | global batch size:   320 | lm loss: 2.998105E+00 | loss scale: 1048576.0 | grad norm: 0.298 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:02:59] iteration     9500/  500000 | consumed samples:      3040000 | elapsed time per iteration (ms): 198.9 | learning rate: 1.498645E-04 | global batch size:   320 | lm loss: 2.994253E+00 | loss scale: 1048576.0 | grad norm: 0.283 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:03:19] iteration     9600/  500000 | consumed samples:      3072000 | elapsed time per iteration (ms): 198.6 | learning rate: 1.498602E-04 | global batch size:   320 | lm loss: 2.994304E+00 | loss scale: 1048576.0 | grad norm: 0.291 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:03:39] iteration     9700/  500000 | consumed samples:      3104000 | elapsed time per iteration (ms): 201.7 | learning rate: 1.498557E-04 | global batch size:   320 | lm loss: 2.987326E+00 | loss scale: 1048576.0 | grad norm: 0.286 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:03:59] iteration     9800/  500000 | consumed samples:      3136000 | elapsed time per iteration (ms): 200.9 | learning rate: 1.498513E-04 | global batch size:   320 | lm loss: 2.986892E+00 | loss scale: 1048576.0 | grad norm: 0.285 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:04:19] iteration     9900/  500000 | consumed samples:      3168000 | elapsed time per iteration (ms): 197.9 | learning rate: 1.498467E-04 | global batch size:   320 | lm loss: 2.979714E+00 | loss scale: 1048576.0 | grad norm: 0.277 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:04:39] iteration    10000/  500000 | consumed samples:      3200000 | elapsed time per iteration (ms): 201.5 | learning rate: 1.498421E-04 | global batch size:   320 | lm loss: 2.978630E+00 | loss scale: 1048576.0 | grad norm: 0.295 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (800.14, 800.53)
+-------------------------------------------------------------------------------------------------
+ validation loss at iteration 10000 | lm loss value: 2.865392E+00 | lm loss PPL: 1.755594E+01 | 
+-------------------------------------------------------------------------------------------------
+(min, max) time across ranks (ms):
+    save-checkpoint ................................: (6131.15, 6131.64)
+ [2024-04-29 16:05:06] iteration    10100/  500000 | consumed samples:      3232000 | elapsed time per iteration (ms): 199.1 | learning rate: 1.498374E-04 | global batch size:   320 | lm loss: 2.975591E+00 | loss scale: 1048576.0 | grad norm: 0.289 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:05:26] iteration    10200/  500000 | consumed samples:      3264000 | elapsed time per iteration (ms): 204.5 | learning rate: 1.498326E-04 | global batch size:   320 | lm loss: 2.973759E+00 | loss scale: 2097152.0 | grad norm: 0.278 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:05:46] iteration    10300/  500000 | consumed samples:      3296000 | elapsed time per iteration (ms): 196.3 | learning rate: 1.498278E-04 | global batch size:   320 | lm loss: 2.971613E+00 | loss scale: 2097152.0 | grad norm: 0.281 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:06:06] iteration    10400/  500000 | consumed samples:      3328000 | elapsed time per iteration (ms): 196.9 | learning rate: 1.498229E-04 | global batch size:   320 | lm loss: 2.968890E+00 | loss scale: 2097152.0 | grad norm: 0.285 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:06:25] iteration    10500/  500000 | consumed samples:      3360000 | elapsed time per iteration (ms): 196.6 | learning rate: 1.498179E-04 | global batch size:   320 | lm loss: 2.964596E+00 | loss scale: 2097152.0 | grad norm: 0.294 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:06:46] iteration    10600/  500000 | consumed samples:      3392000 | elapsed time per iteration (ms): 205.4 | learning rate: 1.498129E-04 | global batch size:   320 | lm loss: 2.961848E+00 | loss scale: 2097152.0 | grad norm: 0.274 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 16:07:06] iteration    10700/  500000 | consumed samples:      3424000 | elapsed time per iteration (ms): 199.3 | learning rate: 1.498078E-04 | global batch size:   320 | lm loss: 2.958353E+00 | loss scale: 2097152.0 | grad norm: 0.275 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:07:25] iteration    10800/  500000 | consumed samples:      3456000 | elapsed time per iteration (ms): 197.3 | learning rate: 1.498027E-04 | global batch size:   320 | lm loss: 2.957386E+00 | loss scale: 1048576.0 | grad norm: 0.275 | number of skipped iterations:   1 | number of nan iterations:   0 |
+ [2024-04-29 16:07:45] iteration    10900/  500000 | consumed samples:      3488000 | elapsed time per iteration (ms): 196.7 | learning rate: 1.497975E-04 | global batch size:   320 | lm loss: 2.953404E+00 | loss scale: 1048576.0 | grad norm: 0.279 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:08:06] iteration    11000/  500000 | consumed samples:      3520000 | elapsed time per iteration (ms): 208.2 | learning rate: 1.497921E-04 | global batch size:   320 | lm loss: 2.950187E+00 | loss scale: 1048576.0 | grad norm: 0.262 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (774.24, 774.50)
+-------------------------------------------------------------------------------------------------
+ validation loss at iteration 11000 | lm loss value: 2.852960E+00 | lm loss PPL: 1.733903E+01 | 
+-------------------------------------------------------------------------------------------------
+ [2024-04-29 16:08:26] iteration    11100/  500000 | consumed samples:      3552000 | elapsed time per iteration (ms): 197.1 | learning rate: 1.497868E-04 | global batch size:   320 | lm loss: 2.949376E+00 | loss scale: 1048576.0 | grad norm: 0.277 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:08:46] iteration    11200/  500000 | consumed samples:      3584000 | elapsed time per iteration (ms): 198.3 | learning rate: 1.497813E-04 | global batch size:   320 | lm loss: 2.950412E+00 | loss scale: 1048576.0 | grad norm: 0.282 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:09:06] iteration    11300/  500000 | consumed samples:      3616000 | elapsed time per iteration (ms): 199.8 | learning rate: 1.497758E-04 | global batch size:   320 | lm loss: 2.944440E+00 | loss scale: 1048576.0 | grad norm: 0.263 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:09:26] iteration    11400/  500000 | consumed samples:      3648000 | elapsed time per iteration (ms): 198.1 | learning rate: 1.497702E-04 | global batch size:   320 | lm loss: 2.944095E+00 | loss scale: 1048576.0 | grad norm: 0.266 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:09:47] iteration    11500/  500000 | consumed samples:      3680000 | elapsed time per iteration (ms): 207.3 | learning rate: 1.497646E-04 | global batch size:   320 | lm loss: 2.937169E+00 | loss scale: 1048576.0 | grad norm: 0.266 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:10:07] iteration    11600/  500000 | consumed samples:      3712000 | elapsed time per iteration (ms): 204.2 | learning rate: 1.497588E-04 | global batch size:   320 | lm loss: 2.937614E+00 | loss scale: 1048576.0 | grad norm: 0.262 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:10:27] iteration    11700/  500000 | consumed samples:      3744000 | elapsed time per iteration (ms): 202.5 | learning rate: 1.497530E-04 | global batch size:   320 | lm loss: 2.931844E+00 | loss scale: 1048576.0 | grad norm: 0.267 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:10:47] iteration    11800/  500000 | consumed samples:      3776000 | elapsed time per iteration (ms): 197.8 | learning rate: 1.497473E-04 | global batch size:   320 | lm loss: 2.931384E+00 | loss scale: 1048576.0 | grad norm: 0.274 | number of skipped iterations:   2 | number of nan iterations:   0 |
+ [2024-04-29 16:11:08] iteration    11900/  500000 | consumed samples:      3808000 | elapsed time per iteration (ms): 206.1 | learning rate: 1.497414E-04 | global batch size:   320 | lm loss: 2.929779E+00 | loss scale: 1048576.0 | grad norm: 0.279 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:11:27] iteration    12000/  500000 | consumed samples:      3840000 | elapsed time per iteration (ms): 196.4 | learning rate: 1.497354E-04 | global batch size:   320 | lm loss: 2.925175E+00 | loss scale: 1048576.0 | grad norm: 0.265 | number of skipped iterations:   0 | number of nan iterations:   0 |
+(min, max) time across ranks (ms):
+    evaluate .......................................: (800.99, 801.54)
+-------------------------------------------------------------------------------------------------
+ validation loss at iteration 12000 | lm loss value: 2.830774E+00 | lm loss PPL: 1.695859E+01 | 
+-------------------------------------------------------------------------------------------------
+ [2024-04-29 16:11:48] iteration    12100/  500000 | consumed samples:      3872000 | elapsed time per iteration (ms): 196.3 | learning rate: 1.497293E-04 | global batch size:   320 | lm loss: 2.925147E+00 | loss scale: 1048576.0 | grad norm: 0.258 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:12:08] iteration    12200/  500000 | consumed samples:      3904000 | elapsed time per iteration (ms): 196.3 | learning rate: 1.497232E-04 | global batch size:   320 | lm loss: 2.924370E+00 | loss scale: 1048576.0 | grad norm: 0.272 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:12:28] iteration    12300/  500000 | consumed samples:      3936000 | elapsed time per iteration (ms): 209.4 | learning rate: 1.497170E-04 | global batch size:   320 | lm loss: 2.918713E+00 | loss scale: 1048576.0 | grad norm: 0.279 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:12:49] iteration    12400/  500000 | consumed samples:      3968000 | elapsed time per iteration (ms): 201.8 | learning rate: 1.497107E-04 | global batch size:   320 | lm loss: 2.919456E+00 | loss scale: 1048576.0 | grad norm: 0.267 | number of skipped iterations:   0 | number of nan iterations:   0 |
+ [2024-04-29 16:13:08] iteration    12500/  500000 | consumed samples:      4000000 | elapsed time per iteration (ms): 198.3 | learning rate: 1.497044E-04 | global batch size:   320 | lm loss: 2.916362E+00 | loss scale: 1048576.0 | grad norm: 0.259 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Traceback (most recent call last):
+  File "/root/epfs/Megatron-LM/pretrain_gpt.py", line 224, in <module>
+    pretrain(train_valid_test_datasets_provider,
+  File "/root/epfs/Megatron-LM/megatron/training/training.py", line 280, in pretrain
+    iteration, num_floating_point_operations_so_far = train(
+  File "/root/epfs/Megatron-LM/megatron/training/training.py", line 1000, in train
+    train_step(forward_step_func,
+  File "/root/epfs/Megatron-LM/megatron/training/training.py", line 572, in train_step
+    update_successful, grad_norm, num_zeros_in_grad = optimizer.step()
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/epfs/Megatron-LM/megatron/core/optimizer/optimizer.py", line 322, in step
+    found_inf_flag = self._unscale_main_grads_and_check_for_nan()
+  File "/root/epfs/Megatron-LM/megatron/core/optimizer/optimizer.py", line 295, in _unscale_main_grads_and_check_for_nan
+    found_inf_flag = self.found_inf.item() > 0
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at /opt/pytorch/pytorch/c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x6c (0x7f0068117efc in /usr/local/lib/python3.8/dist-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0xfa (0x7f00680db486 in /usr/local/lib/python3.8/dist-packages/torch/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x3cc (0x7f00681a770c in /usr/local/lib/python3.8/dist-packages/torch/lib/libc10_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::WorkNCCL::finishedGPUExecutionInternal() const + 0x98 (0x7f00690a41c8 in /usr/local/lib/python3.8/dist-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::WorkNCCL::isCompleted() + 0x78 (0x7f00690a4e68 in /usr/local/lib/python3.8/dist-packages/torch/lib/libtorch_cuda.so)
+frame #5: c10d::ProcessGroupNCCL::workCleanupLoop() + 0x255 (0x7f00690a4885 in /usr/local/lib/python3.8/dist-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xd6de4 (0x7f00ae38ade4 in /usr/lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x8609 (0x7f00f44e3609 in /usr/lib/x86_64-linux-gnu/libpthread.so.0)
+frame #8: clone + 0x43 (0x7f00f461d133 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9162 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9163 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9165 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9166 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9167 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9169 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 9171 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: -6) local_rank: 2 (pid: 9164) of binary: /usr/bin/python
+ERROR:torch.distributed.elastic.agent.server.api:Error waiting on exit barrier. Elapsed: 314.0874104499817 seconds
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 920, in _exit_barrier
+    store_util.barrier(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/utils/store.py", line 78, in barrier
+    synchronize(store, data, rank, world_size, key_prefix, barrier_timeout)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/utils/store.py", line 64, in synchronize
+    agent_data = get_all(store, rank, key_prefix, world_size)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/utils/store.py", line 34, in get_all
+    data = store.get(f"{prefix}{idx}")
+RuntimeError: Socket Timeout
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.1.0a0+fe05266', 'console_scripts', 'torchrun')())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=====================================================
+/root/epfs/Megatron-LM/pretrain_gpt.py FAILED
+-----------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+-----------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-04-29_16:13:27
+  host      : nb-dk6q1njrzfgg-0
+  rank      : 10 (local_rank: 2)
+  exitcode  : -6 (pid: 9164)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 9164
+=====================================================
