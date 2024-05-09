@@ -1,35 +1,30 @@
 #!/bin/bash
 
-# Runs the "345M" parameter model
-# export NCCL_NVLS_ENABLE=0
-# export NCCL_IB_DISABLE=0
-# export NCCL_IB_MERGE_VFS=0
-# export NCCL_IB_HCA=mlx5
-# export NCCL_SOCKET_IFNAME=net1
-# export NCCL_DEBUG=INFO
 
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 export PYTHONPATH=/root/epfs/Megatron-LM
+
+
 GPUS_PER_NODE=8
-# Change for multinode config
-MASTER_ADDR=10.233.113.58
-MASTER_PORT=6000
-NNODES=2
-NODE_RANK=1
-WORLD_SIZE=$(($GPUS_PER_NODE*$NNODES))
+#Change for multinode config
+# MASTER_ADDR=10.233.113.58
+# MASTER_PORT=6000
+#NNODES=$PET_NNODES
+#NODE_RANK=$PET_NODE_RANK
+#WORLD_SIZE=$(($GPUS_PER_NODE*$NNODES))
 
 CHECKPOINT_PATH=/root/epfs/check_point
 VOCAB_FILE=/root/epfs/Megatron-LM/gpt2-vocab.json
 MERGE_FILE=/root/epfs/Megatron-LM/gpt2-merges.txt
 DATA_PATH=/root/epfs/dataset/enwiki-latest-pages-articles
 
-DISTRIBUTED_ARGS="
-    --nproc_per_node $GPUS_PER_NODE \
-    --nnodes $NNODES \
-    --node_rank $NODE_RANK \
-    --master_addr $MASTER_ADDR \
-    --master_port $MASTER_PORT
-"
+#DISTRIBUTED_ARGS="
+#    --nproc_per_node $GPUS_PER_NODE \
+#    --nnodes $NNODES \
+#    --node_rank $NODE_RANK \
+#    --master_addr $MASTER_ADDR \
+#    --master_port $MASTER_PORT
+#"
 
 GPT_ARGS="
     --num-layers 24 \
@@ -64,7 +59,7 @@ OUTPUT_ARGS="
     --eval-iters 10
 "
 
-torchrun $DISTRIBUTED_ARGS /root/epfs/Megatron-LM/pretrain_gpt.py \
+torchrun  /root/epfs/Megatron-LM/pretrain_gpt.py \
     $GPT_ARGS \
     $DATA_ARGS \
     $OUTPUT_ARGS \
